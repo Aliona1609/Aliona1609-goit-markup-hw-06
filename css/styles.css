@@ -76,20 +76,9 @@ img {
 
 @media screen and (min-width: 768px) {
 .header {
-    border-bottom: 1px solid #E7E9FC;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding-top: 24px;
-    padding-bottom: 24px;
+   padding-top: 0;
+    padding-bottom: 0;
 }
-}
-
-@media screen and (min-width: 1158px) {
-.header {
-    border-bottom: 1px solid #E7E9FC;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding-top: 24px;
-    padding-bottom: 24px;
-    }
 }
 
 
@@ -194,7 +183,7 @@ img {
 
 @media screen and (min-width: 1158px) {
 .address-list {
-    display: block;
+flex-direction: row;
     gap: 40px;
 
 }
@@ -241,7 +230,7 @@ img {
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/img11.jpg);
+        url(../images/Office-mob-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -251,20 +240,56 @@ img {
     display: flex;
     margin: 0 auto;
 }
+ @media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Office-mob-2x.jpg);
+    }
+}
+
 
 @media screen and (min-width: 768px) {
 .hero {
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Office-tab-1x.jpg);
 }
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Office-tab-2x.jpg);
+    }
+}
+
 
 @media screen and (min-width: 1158px) {
 .hero {
      padding-top: 188px;
      padding-bottom: 188px;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/Office-desc-1x.jpg);
 }
+
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+(min-resolution: 192dpi) and (min-width: 1158px) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Office-desc-2x.jpg);
+    }   
+}
+
 
 
 .hero-title {
@@ -522,7 +547,6 @@ img {
 
 @media screen and (min-width: 1158px) {
 .team-list {
-    gap: 72px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -775,7 +799,8 @@ width: calc((100% - 1*24px) / 2);
 
 @media screen and (min-width: 1158px) {
 .footer {
-
+padding-left: 0;
+padding-right: 0;
 }
 
 
@@ -785,7 +810,7 @@ width: calc((100% - 1*24px) / 2);
 
 .container-footer {
     display: flex;
-    gap: 72px;
+    gap: 72px 24px;
     flex-direction: column;
     align-items: baseline;
     align-items: center;
@@ -796,26 +821,28 @@ width: calc((100% - 1*24px) / 2);
 .container-footer {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 }
 
 @media screen and (min-width: 1158px){
 .container-footer {
 
+    gap:0;
+    flex-wrap: nowrap;
 }
 }
-
-
-
 
 
 .footer-logo {
-    align-items: baseline;
+    text-align: center;
  
 }
 
 @media screen and (min-width: 768px) {
 .footer-logo {
+    width: 264px;
+    text-align: left;
     }
 
 }
@@ -857,16 +884,17 @@ width: calc((100% - 1*24px) / 2);
     line-height: 1.17;
     letter-spacing: 0.03em;
     display: inline-block;
-    text-align: center;
     margin-bottom: 16px;
     text-transform: uppercase;
-    width: 264px;
 }
+
+
+
+
 
 
    .icons-footer {
   text-align: center;
-  width: 100%;
 }
 
 
@@ -885,6 +913,13 @@ width: calc((100% - 1*24px) / 2);
     text-align: center;
     width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+.icons-text {
+        text-align: left;
+    }
+}
+
 
 
 .icon-list-footer {
@@ -934,13 +969,10 @@ width: calc((100% - 1*24px) / 2);
 
 @media screen and (min-width: 1158px) {
 .form-footer {
+    width: auto;
     margin-left: auto;
     }
 }
-
-
-
-
 
 
 
@@ -955,6 +987,15 @@ width: calc((100% - 1*24px) / 2);
 
 }
 
+@media screen and (min-width: 768px) {
+    .form-text {
+        text-align: left;
+    }
+}
+
+
+
+
 
 
 
@@ -965,9 +1006,23 @@ width: calc((100% - 1*24px) / 2);
     flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+    .form {
+        flex-direction: row;
+    }
+}
+
+
 .footer-label {
     width: 100%;
 }
+@media screen and (min-width: 768px) {
+.footer-label {
+    width: auto;
+}
+}
+
+
 
 
 .form-input {
