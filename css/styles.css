@@ -214,25 +214,15 @@ flex-direction: row;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    fill: FFFFFF;
-}
- 
-@media screen and (min-width: 768px) {
-.open-menu {
-    display: none;
-}
+   
 }
 
 
 @media screen and (min-width: 1158px) {
-.open-menu {
+.open-menu-btn {
     display: none;
 } 
 }
-
-
-
 
 /*HERO*/
 .hero {
