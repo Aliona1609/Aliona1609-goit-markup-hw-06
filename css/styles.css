@@ -322,7 +322,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     font-size: 56px;
     margin-bottom: 48px;
     max-width: 496px;
-
+    text-transform: none;
     }
 }
 
